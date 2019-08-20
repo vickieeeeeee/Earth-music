@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--兼容edge-->
+    <title>大地音协</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1277122_kub2hqyv5sp.css"><!--翻转效果-->
+    <style type="text/css">
+        a:link,a:visited{
+            text-decoration:none;/*超链接无下划线*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="front">
+            <span class="turn">
+                <i class="iconfont icon-change"></i>
+            </span>
+            <h2>大地音协</h2>
+            <h4>Earth Music</h4>
+        </div>
+        <div class="back">
+            <span class="turn">
+                <i class="iconfont icon-change"></i>
+            </span>
+            <a href="加密前.html"><h2>进入官网</h2></a>
+            <h4>广工大地音乐协会</h4>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $($(".turn i").click(
+        () => {
+            $(".back").toggleClass("back-turn");
+            $(".front").toggleClass("front-turn");
+        }
+    ))
+</script>
+</html>
